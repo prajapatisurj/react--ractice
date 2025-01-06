@@ -1,21 +1,38 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
-import './App.css'
-function App() {
-  const [theme, setTheme] = useState("light");
+// import './App.css'
+// function App() {
+//   const [theme, setTheme] = useState("light");
 
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-  };
+//   const toggleTheme = () => {
+//     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+//   };
 
+//   return (
+//     <div className={`app ${theme}`}>
+//       <button onClick={toggleTheme}>
+//         Switch to {theme === "light" ? "Dark" : "Light"} Mode
+//       </button>
+//       <h1>{theme === "light" ? "Light Mode" : "Dark Mode"}</h1>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+import React from 'react'
+// import ReactForm from './components/ReactForm'
+// import Products from './components/Products'
+import ToDo from './components/ToDo/ToDo'
+
+const App = () => {
   return (
-    <div className={`app ${theme}`}>
-      <button onClick={toggleTheme}>
-        Switch to {theme === "light" ? "Dark" : "Light"} Mode
-      </button>
-      <h1>{theme === "light" ? "Light Mode" : "Dark Mode"}</h1>
+    <div>
+      <ToDo/>
+      {/* <Products/>
+      <ReactForm/> */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
