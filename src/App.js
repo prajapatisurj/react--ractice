@@ -20,19 +20,21 @@
 
 // export default App;
 
-import React from 'react'
+import React from "react";
 // import ReactForm from './components/ReactForm'
 // import Products from './components/Products'
-import ToDo from './components/ToDo/ToDo'
+// import ToDo from "./components/ToDo/ToDo";
+import SideBar from "./components/sidebar/SideBar";
 
 const App = () => {
   return (
     <div>
-      <ToDo/>
+      <SideBar />
+      {/* <ToDo/> */}
       {/* <Products/>
       <ReactForm/> */}
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
