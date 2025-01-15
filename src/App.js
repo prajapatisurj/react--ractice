@@ -24,15 +24,19 @@ import React from "react";
 // import ReactForm from './components/ReactForm'
 // import Products from './components/Products'
 // import ToDo from "./components/ToDo/ToDo";
-import SideBar from "./components/sidebar/SideBar";
+// import SideBar from "./components/sidebar/SideBar";
+import Practice from "./components/Practice";
+import Reducer from "./Reducer";
 
 const App = () => {
   return (
     <div>
-      <SideBar />
+      {/* <SideBar /> */}
       {/* <ToDo/> */}
       {/* <Products/>
       <ReactForm/> */}
+      <Practice />
+      <Reducer/>
     </div>
   );
 };
